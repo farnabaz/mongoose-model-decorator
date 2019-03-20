@@ -1,0 +1,26 @@
+{
+  "name": "@persian/mc",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "license": "MIT",
+  "dependencies": {
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.3333"
+  },
+  "files": [
+    "lib/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/mongoose": "^5.3.23",
+    "jest": "^24.5.0",
+    "mongoose": "^5.4.19",
+    "ts-jest": "^24.0.0"
+  }
+}
