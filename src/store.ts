@@ -4,7 +4,6 @@ class Definition {
   fields: { [key: string]: any } = {}
   preHooks: any[] = []
   postHooks: any[] = []
-  statics: any[] = []
   methods: any[] = []
 
   addField(name: string, value: any) {
@@ -25,13 +24,6 @@ class Definition {
     })
   }
 
-  addStatic(name: string, handler: any) {
-    this.statics.push({
-        name,
-        handler
-    })
-  }
-
   addMethod(name: string, handler: any) {
     this.methods.push({
         name,
@@ -39,26 +31,33 @@ class Definition {
     })
   }
 
-  createSchema(options: any): Schema {
+  createSchema(decoratedClass: any, options: any): Schema {
     const schema = new Schema(this.fields, options);
 
-    this.apply(schema)
-    
+    this._applyHooks(schema)
+    this._applyMethods(schema)
+    this._applyStatics(decoratedClass, schema)
+
     return schema;
   }
 
-  apply(schema: Schema) {
+  _applyStatics(decoratedClass: any, schema: Schema) {
+    Object.getOwnPropertyNames(decoratedClass).forEach(p => {
+        if (typeof decoratedClass[p] === 'function')
+        schema.statics[p] = decoratedClass[p];
+    });
+  }
+
+  _applyHooks(schema: Schema) {
     this.preHooks.forEach((hook) => {
       schema.pre(hook.method, hook.handler)
     })
     this.postHooks.forEach((hook) => {
       schema.post(hook.method, hook.handler)
     })
+  }
 
-    this.statics.forEach((method) => {
-      schema.statics[method.name] = method.handler;
-    })
-
+  _applyMethods(schema: Schema) {
     this.methods.forEach((method) => {
       schema.methods[method.name] = method.handler;
     })
