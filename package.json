@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "test": "jest",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "prepublish": "npm run build"
   },
