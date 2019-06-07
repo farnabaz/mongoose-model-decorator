@@ -15,7 +15,7 @@ npm i mongoose-model-decorator --save-dev
  * Post.ts
  **/
 import { Model, Schema } from 'mongoose'
-import { field, doc, pre, post, method } from '../src';
+import { field, doc, pre, post, method } from 'mongoose-model-decorator';
 
 @doc()
 export default class Post extends Model {
