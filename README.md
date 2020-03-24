@@ -72,7 +72,7 @@ Post.findByTitle('title')
     .then(titles => console.log(titles))
 ```
 
-- If you receive error while using decorators, add `"experimentalDecorators": true` in `compilerOptions` of your `tsconfig.json` 
+- If you received an error while using decorators, you should add `"experimentalDecorators": true` in `compilerOptions` of your `tsconfig.json` 
 
 
 ## Inspired of
