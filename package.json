@@ -5,7 +5,7 @@
   "typings": "lib/index.d.ts",
   "license": "MIT",
   "dependencies": {
-    "tslint": "^5.14.0",
+    "tslint": "^6.0.0",
     "typescript": "^3.3.3333"
   },
   "files": [
