@@ -24,6 +24,6 @@
     "jest": "25.2.3",
     "mongoose": "5.9.7",
     "standard-version": "7.1.0",
-    "ts-jest": "25.3.0"
+    "ts-jest": "25.5.1"
   }
 }
