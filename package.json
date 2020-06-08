@@ -21,7 +21,7 @@
   "devDependencies": {
     "@types/jest": "25.2.3",
     "@types/mongoose": "5.7.23",
-    "jest": "25.2.3",
+    "jest": "25.5.4",
     "mongoose": "5.9.18",
     "standard-version": "7.1.0",
     "ts-jest": "26.1.0"
