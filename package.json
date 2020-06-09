@@ -19,7 +19,7 @@
     "release": "standard-version && git push --follow-tags && npm publish"
   },
   "devDependencies": {
-    "@types/jest": "25.2.3",
+    "@types/jest": "26.0.0",
     "@types/mongoose": "5.7.23",
     "jest": "25.2.3",
     "mongoose": "5.9.18",
