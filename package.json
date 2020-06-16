@@ -22,7 +22,7 @@
     "@types/jest": "26.0.0",
     "@types/mongoose": "5.7.24",
     "jest": "26.0.1",
-    "mongoose": "5.9.18",
+    "mongoose": "5.9.19",
     "standard-version": "7.1.0",
     "ts-jest": "26.1.0"
   }
