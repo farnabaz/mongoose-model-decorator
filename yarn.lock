@@ -682,10 +682,10 @@
     "@types/bson" "*"
     "@types/node" "*"
 
-"@types/mongoose@5.7.29":
-  version "5.7.29"
-  resolved "https://registry.yarnpkg.com/@types/mongoose/-/mongoose-5.7.29.tgz#247a2b4d26bf4d7e81417261f033908eef6b124e"
-  integrity sha512-+7u1akCerciZ2MG66p6Vy+9Tg7dYcgSeNbDInxdOA5vB5xAZhNiIBj8HESnJmIqOBcWxQ90HpaPWtEwggBqXug==
+"@types/mongoose@5.7.32":
+  version "5.7.32"
+  resolved "https://registry.yarnpkg.com/@types/mongoose/-/mongoose-5.7.32.tgz#66265946d07a3418626843e7e93a00995675adb2"
+  integrity sha512-o1qijffQipTtYMJEYF8BOd+D8fy6ZGtGKP654udSEp6wysU3r1O2T8wHSP9QIC//QwQgKQGolu2y9vc9KXaq4w==
   dependencies:
     "@types/mongodb" "*"
     "@types/node" "*"
@@ -3306,10 +3306,10 @@ mongoose-legacy-pluralize@1.0.2:
   resolved "https://registry.yarnpkg.com/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
   integrity sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
 
-mongoose@5.9.20:
-  version "5.9.20"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.9.20.tgz#975255196104ce760386ab439b1dad43caae23b5"
-  integrity sha512-vRP6Csu2obzSl3ed7kTQMrolBNgweiRJ/eBU1PSe/rJfjqWS1oqDE2D1ZPGxkVOsKXs7Gyd84GAXerj8IB2UWg==
+mongoose@5.9.25:
+  version "5.9.25"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.9.25.tgz#620da737ec9a667f84404ad4f35bb60338dd0b4b"
+  integrity sha512-vz/DqJ3mrHqEIlfRbKmDZ9TzQ1a0hCtSQpjHScIxr4rEtLs0tjsXDeEWcJ/vEEc3oLfP6vRx9V+uYSprXDUvFQ==
   dependencies:
     bson "^1.1.4"
     kareem "2.3.1"
@@ -3319,7 +3319,7 @@ mongoose@5.9.20:
     mquery "3.2.2"
     ms "2.1.2"
     regexp-clone "1.0.0"
-    safe-buffer "5.1.2"
+    safe-buffer "5.2.1"
     sift "7.0.1"
     sliced "1.0.1"
 
@@ -4064,6 +4064,11 @@ safe-buffer@5.1.2, safe-buffer@^5.0.1, safe-buffer@^5.1.2, safe-buffer@~5.1.0, s
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
+
+safe-buffer@5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
+  integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
 safe-buffer@^5.1.1:
   version "5.2.0"
